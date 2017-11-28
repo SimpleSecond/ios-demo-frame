@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		664FAEF81FCD0C6C005B9BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FAEF71FCD0C6C005B9BF4 /* AppDelegate.m */; };
-		664FAEFB1FCD0C6C005B9BF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FAEFA1FCD0C6C005B9BF4 /* ViewController.m */; };
 		664FAEFE1FCD0C6C005B9BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664FAEFC1FCD0C6C005B9BF4 /* Main.storyboard */; };
 		664FAF011FCD0C6C005B9BF4 /* frame_news.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664FAEFF1FCD0C6C005B9BF4 /* frame_news.xcdatamodeld */; };
 		664FAF031FCD0C6C005B9BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664FAF021FCD0C6C005B9BF4 /* Assets.xcassets */; };
 		664FAF061FCD0C6C005B9BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664FAF041FCD0C6C005B9BF4 /* LaunchScreen.storyboard */; };
 		664FAF091FCD0C6C005B9BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FAF081FCD0C6C005B9BF4 /* main.m */; };
+		66FD059F1FCD33EF00E12F77 /* WDYVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD059E1FCD33EF00E12F77 /* WDYVerticalButton.m */; };
+		66FD05A21FCD341D00E12F77 /* WDYTabBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05A11FCD341D00E12F77 /* WDYTabBarContentView.m */; };
+		66FD05A51FCD343400E12F77 /* WDYTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05A41FCD343400E12F77 /* WDYTabBarView.m */; };
+		66FD05A81FCD34BF00E12F77 /* WDYBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05A71FCD34BF00E12F77 /* WDYBaseTabBarController.m */; };
+		66FD05AB1FCD34DD00E12F77 /* WDYBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05AA1FCD34DD00E12F77 /* WDYBaseNavController.m */; };
+		66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B21FCD364500E12F77 /* WDYHomeController.m */; };
+		66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */; };
 		EEB27CD5F104D315D423EA14 /* libPods-frame-news.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */; };
 /* End PBXBuildFile section */
 
@@ -22,14 +28,27 @@
 		664FAEF31FCD0C6C005B9BF4 /* frame-news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "frame-news.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		664FAEF61FCD0C6C005B9BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		664FAEF71FCD0C6C005B9BF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		664FAEF91FCD0C6C005B9BF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		664FAEFA1FCD0C6C005B9BF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		664FAEFD1FCD0C6C005B9BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		664FAF001FCD0C6C005B9BF4 /* frame_news.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = frame_news.xcdatamodel; sourceTree = "<group>"; };
 		664FAF021FCD0C6C005B9BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		664FAF051FCD0C6C005B9BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		664FAF071FCD0C6C005B9BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		664FAF081FCD0C6C005B9BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66FD05961FCD1DF700E12F77 /* news.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = news.pch; sourceTree = "<group>"; };
+		66FD059D1FCD33EF00E12F77 /* WDYVerticalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYVerticalButton.h; sourceTree = "<group>"; };
+		66FD059E1FCD33EF00E12F77 /* WDYVerticalButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYVerticalButton.m; sourceTree = "<group>"; };
+		66FD05A01FCD341D00E12F77 /* WDYTabBarContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYTabBarContentView.h; sourceTree = "<group>"; };
+		66FD05A11FCD341D00E12F77 /* WDYTabBarContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYTabBarContentView.m; sourceTree = "<group>"; };
+		66FD05A31FCD343400E12F77 /* WDYTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYTabBarView.h; sourceTree = "<group>"; };
+		66FD05A41FCD343400E12F77 /* WDYTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYTabBarView.m; sourceTree = "<group>"; };
+		66FD05A61FCD34BF00E12F77 /* WDYBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYBaseTabBarController.h; sourceTree = "<group>"; };
+		66FD05A71FCD34BF00E12F77 /* WDYBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYBaseTabBarController.m; sourceTree = "<group>"; };
+		66FD05A91FCD34DD00E12F77 /* WDYBaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYBaseNavController.h; sourceTree = "<group>"; };
+		66FD05AA1FCD34DD00E12F77 /* WDYBaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYBaseNavController.m; sourceTree = "<group>"; };
+		66FD05B11FCD364500E12F77 /* WDYHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYHomeController.h; sourceTree = "<group>"; };
+		66FD05B21FCD364500E12F77 /* WDYHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYHomeController.m; sourceTree = "<group>"; };
+		66FD05B41FCD36A800E12F77 /* WDYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYBaseViewController.h; sourceTree = "<group>"; };
+		66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYBaseViewController.m; sourceTree = "<group>"; };
 		B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-frame-news.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD20C968931B5F0604E1BE6 /* Pods-frame-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frame-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-frame-news/Pods-frame-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +112,7 @@
 		664FAF0F1FCD0DBA005B9BF4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66FD05951FCD1DD200E12F77 /* Other */,
 				664FAF101FCD0DBA005B9BF4 /* Tools */,
 				664FAF111FCD0DBA005B9BF4 /* Controller */,
 				664FAF121FCD0DBA005B9BF4 /* Common */,
@@ -112,8 +132,11 @@
 		664FAF111FCD0DBA005B9BF4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				664FAEF91FCD0C6C005B9BF4 /* ViewController.h */,
-				664FAEFA1FCD0C6C005B9BF4 /* ViewController.m */,
+				66FD05AE1FCD361C00E12F77 /* Category */,
+				66FD05AF1FCD361D00E12F77 /* Focus */,
+				66FD05AD1FCD361C00E12F77 /* Home */,
+				66FD05B01FCD361D00E12F77 /* Me */,
+				66FD05AC1FCD361C00E12F77 /* Search */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +144,18 @@
 		664FAF121FCD0DBA005B9BF4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				66FD059D1FCD33EF00E12F77 /* WDYVerticalButton.h */,
+				66FD059E1FCD33EF00E12F77 /* WDYVerticalButton.m */,
+				66FD05A01FCD341D00E12F77 /* WDYTabBarContentView.h */,
+				66FD05A11FCD341D00E12F77 /* WDYTabBarContentView.m */,
+				66FD05A31FCD343400E12F77 /* WDYTabBarView.h */,
+				66FD05A41FCD343400E12F77 /* WDYTabBarView.m */,
+				66FD05A61FCD34BF00E12F77 /* WDYBaseTabBarController.h */,
+				66FD05A71FCD34BF00E12F77 /* WDYBaseTabBarController.m */,
+				66FD05A91FCD34DD00E12F77 /* WDYBaseNavController.h */,
+				66FD05AA1FCD34DD00E12F77 /* WDYBaseNavController.m */,
+				66FD05B41FCD36A800E12F77 /* WDYBaseViewController.h */,
+				66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -154,6 +189,51 @@
 			path = Supportings;
 			sourceTree = "<group>";
 		};
+		66FD05951FCD1DD200E12F77 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				66FD05961FCD1DF700E12F77 /* news.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		66FD05AC1FCD361C00E12F77 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		66FD05AD1FCD361C00E12F77 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				66FD05B11FCD364500E12F77 /* WDYHomeController.h */,
+				66FD05B21FCD364500E12F77 /* WDYHomeController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		66FD05AE1FCD361C00E12F77 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		66FD05AF1FCD361D00E12F77 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		66FD05B01FCD361D00E12F77 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +263,7 @@
 		664FAEEB1FCD0C6C005B9BF4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WDY;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = example;
 				TargetAttributes = {
@@ -280,9 +361,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				664FAF011FCD0C6C005B9BF4 /* frame_news.xcdatamodeld in Sources */,
-				664FAEFB1FCD0C6C005B9BF4 /* ViewController.m in Sources */,
+				66FD05AB1FCD34DD00E12F77 /* WDYBaseNavController.m in Sources */,
+				66FD059F1FCD33EF00E12F77 /* WDYVerticalButton.m in Sources */,
+				66FD05A81FCD34BF00E12F77 /* WDYBaseTabBarController.m in Sources */,
 				664FAF091FCD0C6C005B9BF4 /* main.m in Sources */,
 				664FAEF81FCD0C6C005B9BF4 /* AppDelegate.m in Sources */,
+				66FD05A21FCD341D00E12F77 /* WDYTabBarContentView.m in Sources */,
+				66FD05A51FCD343400E12F77 /* WDYTabBarView.m in Sources */,
+				66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */,
+				66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,13 +504,17 @@
 			baseConfigurationReference = CDD20C968931B5F0604E1BE6 /* Pods-frame-news.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSET_PACK_MANIFEST_URL_PREFIX = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AWTS62H8S;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/frame-news/Classes/Other/news.pch";
 				INFOPLIST_FILE = "frame-news/Supportings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.frame-news";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -432,13 +523,17 @@
 			baseConfigurationReference = 14F455341A972B0460131FC0 /* Pods-frame-news.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSET_PACK_MANIFEST_URL_PREFIX = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AWTS62H8S;
+				EXECUTABLE_PREFIX = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/frame-news/Classes/Other/news.pch";
 				INFOPLIST_FILE = "frame-news/Supportings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.frame-news";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};

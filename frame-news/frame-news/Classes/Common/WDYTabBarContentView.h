@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WDYTabBarContentView.h
 //  frame-news
 //
 //  Created by WangDongya on 2017/11/28.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WDYTabBarContentView : UIView
 
 @end
-

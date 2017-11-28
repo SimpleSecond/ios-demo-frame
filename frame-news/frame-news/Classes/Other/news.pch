@@ -1,0 +1,18 @@
+//
+//  news.pch
+//  frame-news
+//
+//  Created by WangDongya on 2017/11/28.
+//  Copyright © 2017年 example. All rights reserved.
+//
+
+#ifndef news_pch
+#define news_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Masonry.h>
+
+
+#endif /* news_pch */
