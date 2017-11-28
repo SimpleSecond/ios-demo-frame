@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class WDYTabBarContentView;
+
+// 该视图用到的协议
+@protocol WDYTabBarContentViewDelegate <NSObject>
+- (void)contentView:(WDYTabBarContentView*)view didSelectedItemAtIndex:(NSInteger)index;
+- (void)contentViewClickCenterItem:(WDYTabBarContentView*)view;
+@end
+
 @interface WDYTabBarContentView : UIView
+
+@property (nonatomic, weak) id<WDYTabBarContentViewDelegate> contentDelegate;
 
 @end

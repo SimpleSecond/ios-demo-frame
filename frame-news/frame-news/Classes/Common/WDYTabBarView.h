@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WDYTabBarContentView.h"
 
 @interface WDYTabBarView : UITabBar
+
+@property (nonatomic, strong) WDYTabBarContentView *contentView;
 
 @end

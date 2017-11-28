@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view setBackgroundColor:[UIColor greenColor]];
+    
+    [self setTitle:@"网易新闻"];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,6 +20,7 @@
 		66FD05AB1FCD34DD00E12F77 /* WDYBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05AA1FCD34DD00E12F77 /* WDYBaseNavController.m */; };
 		66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B21FCD364500E12F77 /* WDYHomeController.m */; };
 		66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */; };
+		66FD05BA1FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B91FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m */; };
 		EEB27CD5F104D315D423EA14 /* libPods-frame-news.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		66FD05B21FCD364500E12F77 /* WDYHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYHomeController.m; sourceTree = "<group>"; };
 		66FD05B41FCD36A800E12F77 /* WDYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYBaseViewController.h; sourceTree = "<group>"; };
 		66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYBaseViewController.m; sourceTree = "<group>"; };
+		66FD05B81FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BackgroundAlpha.h"; sourceTree = "<group>"; };
+		66FD05B91FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+BackgroundAlpha.m"; sourceTree = "<group>"; };
 		B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-frame-news.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD20C968931B5F0604E1BE6 /* Pods-frame-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frame-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-frame-news/Pods-frame-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +106,7 @@
 		664FAEF51FCD0C6C005B9BF4 /* frame-news */ = {
 			isa = PBXGroup;
 			children = (
+				66FD05B71FCD5CA700E12F77 /* Libs */,
 				664FAF0F1FCD0DBA005B9BF4 /* Classes */,
 				664FAF151FCD0DBA005B9BF4 /* Supportings */,
 			);
@@ -193,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				66FD05961FCD1DF700E12F77 /* news.pch */,
+				66FD05B81FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.h */,
+				66FD05B91FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -232,6 +238,13 @@
 			children = (
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		66FD05B71FCD5CA700E12F77 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +381,7 @@
 				664FAEF81FCD0C6C005B9BF4 /* AppDelegate.m in Sources */,
 				66FD05A21FCD341D00E12F77 /* WDYTabBarContentView.m in Sources */,
 				66FD05A51FCD343400E12F77 /* WDYTabBarView.m in Sources */,
+				66FD05BA1FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m in Sources */,
 				66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */,
 				66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */,
 			);

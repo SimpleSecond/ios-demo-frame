@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WDYBaseTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.rootViewController = [[WDYBaseTabBarController alloc] init];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

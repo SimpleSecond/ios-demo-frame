@@ -7,8 +7,11 @@
 //
 
 #import "WDYBaseTabBarController.h"
+#import "WDYTabBarView.h"
+#import "WDYBaseNavController.h"
+#import "WDYHomeController.h"
 
-@interface WDYBaseTabBarController ()
+@interface WDYBaseTabBarController () <WDYTabBarContentViewDelegate>
 
 @end
 
@@ -16,22 +19,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 利用KVO使用自定义的tabbar
+    WDYTabBarView *tabBarView = [[WDYTabBarView alloc] init];
+    tabBarView.contentView.contentDelegate = self;
+    [self setValue:tabBarView forKey:@"tabBar"];
+    
+    // 首先加载子视图
+    [self loadSubControllers];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 加载子视图
+- (void)loadSubControllers
+{
+    
+    // 1. Home
+    WDYHomeController *homeVc = [[WDYHomeController alloc] init];
+    WDYBaseNavController *nav1 = [[WDYBaseNavController alloc] initWithRootViewController:homeVc];
+    [self addChildViewController:nav1];
+    
+    // 2.
+    
+    
+    // 3.
+    
+    
+    // 4.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 切换子视图
+- (void)contentView:(WDYTabBarContentView*)view didSelectedItemAtIndex:(NSInteger)index
+{
+    NSLog(@"Index = %d", index);
+    //self.selectedIndex = index;
 }
-*/
+
+// 点击中间凸起按钮事件
+- (void)contentViewClickCenterItem:(WDYTabBarContentView*)view
+{
+    NSLog(@"点击了中间按钮事件");
+}
 
 @end
