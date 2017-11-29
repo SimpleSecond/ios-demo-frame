@@ -79,7 +79,6 @@
     
     // 取出WDYVerticalButton
     NSMutableArray *tabBarItemArr = [NSMutableArray array];
-    NSLog(@"Subviews count = %d", self.subviews.count);
     for (UIView *view in self.subviews) {
         if ([view isKindOfClass:[WDYVerticalButton class]]) {
             [tabBarItemArr addObject:view];

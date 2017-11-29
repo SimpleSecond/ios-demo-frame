@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 导航栏颜色统一设置
+//    self.navigationBar.barTintColor = [UIColor lightGrayColor];
+//    self.navigationBar.tintColor = [UIColor whiteColor];
+    
+    
+    
 }
 
 

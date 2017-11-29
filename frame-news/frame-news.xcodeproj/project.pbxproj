@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10F224FACFDCB4EEDA3A6B75 /* Pods_frame_news.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD09885B8BA3393FE3B9592 /* Pods_frame_news.framework */; };
 		664FAEF81FCD0C6C005B9BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FAEF71FCD0C6C005B9BF4 /* AppDelegate.m */; };
 		664FAEFE1FCD0C6C005B9BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664FAEFC1FCD0C6C005B9BF4 /* Main.storyboard */; };
 		664FAF011FCD0C6C005B9BF4 /* frame_news.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664FAEFF1FCD0C6C005B9BF4 /* frame_news.xcdatamodeld */; };
@@ -21,7 +22,14 @@
 		66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B21FCD364500E12F77 /* WDYHomeController.m */; };
 		66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */; };
 		66FD05BA1FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05B91FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m */; };
-		EEB27CD5F104D315D423EA14 /* libPods-frame-news.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */; };
+		66FD05CA1FCE73A900E12F77 /* WDYHotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05C91FCE73A900E12F77 /* WDYHotController.m */; };
+		66FD05CD1FCE73DE00E12F77 /* WDYTopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05CC1FCE73DE00E12F77 /* WDYTopController.m */; };
+		66FD05D01FCE741400E12F77 /* WDYVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05CF1FCE741400E12F77 /* WDYVideoController.m */; };
+		66FD05D31FCE742600E12F77 /* WDYSocialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05D21FCE742600E12F77 /* WDYSocialController.m */; };
+		66FD05D61FCE743A00E12F77 /* WDYPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05D51FCE743A00E12F77 /* WDYPhotoController.m */; };
+		66FD05D91FCE745200E12F77 /* WDYScienceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05D81FCE745200E12F77 /* WDYScienceController.m */; };
+		66FD05DC1FCE747300E12F77 /* WDYCarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05DB1FCE747300E12F77 /* WDYCarController.m */; };
+		66FD05DF1FCE748600E12F77 /* WDYArmyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05DE1FCE748600E12F77 /* WDYArmyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +60,23 @@
 		66FD05B51FCD36A800E12F77 /* WDYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYBaseViewController.m; sourceTree = "<group>"; };
 		66FD05B81FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BackgroundAlpha.h"; sourceTree = "<group>"; };
 		66FD05B91FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+BackgroundAlpha.m"; sourceTree = "<group>"; };
-		B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-frame-news.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66FD05C81FCE73A900E12F77 /* WDYHotController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYHotController.h; sourceTree = "<group>"; };
+		66FD05C91FCE73A900E12F77 /* WDYHotController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYHotController.m; sourceTree = "<group>"; };
+		66FD05CB1FCE73DE00E12F77 /* WDYTopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYTopController.h; sourceTree = "<group>"; };
+		66FD05CC1FCE73DE00E12F77 /* WDYTopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYTopController.m; sourceTree = "<group>"; };
+		66FD05CE1FCE741400E12F77 /* WDYVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYVideoController.h; sourceTree = "<group>"; };
+		66FD05CF1FCE741400E12F77 /* WDYVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYVideoController.m; sourceTree = "<group>"; };
+		66FD05D11FCE742600E12F77 /* WDYSocialController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYSocialController.h; sourceTree = "<group>"; };
+		66FD05D21FCE742600E12F77 /* WDYSocialController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYSocialController.m; sourceTree = "<group>"; };
+		66FD05D41FCE743A00E12F77 /* WDYPhotoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYPhotoController.h; sourceTree = "<group>"; };
+		66FD05D51FCE743A00E12F77 /* WDYPhotoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYPhotoController.m; sourceTree = "<group>"; };
+		66FD05D71FCE745200E12F77 /* WDYScienceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYScienceController.h; sourceTree = "<group>"; };
+		66FD05D81FCE745200E12F77 /* WDYScienceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYScienceController.m; sourceTree = "<group>"; };
+		66FD05DA1FCE747300E12F77 /* WDYCarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYCarController.h; sourceTree = "<group>"; };
+		66FD05DB1FCE747300E12F77 /* WDYCarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYCarController.m; sourceTree = "<group>"; };
+		66FD05DD1FCE748600E12F77 /* WDYArmyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYArmyController.h; sourceTree = "<group>"; };
+		66FD05DE1FCE748600E12F77 /* WDYArmyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYArmyController.m; sourceTree = "<group>"; };
+		7FD09885B8BA3393FE3B9592 /* Pods_frame_news.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_frame_news.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD20C968931B5F0604E1BE6 /* Pods-frame-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-frame-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-frame-news/Pods-frame-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB27CD5F104D315D423EA14 /* libPods-frame-news.a in Frameworks */,
+				10F224FACFDCB4EEDA3A6B75 /* Pods_frame_news.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +104,7 @@
 		428754B2E87E64BCE982BE7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3DACCD6A5EF487BBDD1DB89 /* libPods-frame-news.a */,
+				7FD09885B8BA3393FE3B9592 /* Pods_frame_news.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,6 +239,22 @@
 			children = (
 				66FD05B11FCD364500E12F77 /* WDYHomeController.h */,
 				66FD05B21FCD364500E12F77 /* WDYHomeController.m */,
+				66FD05C81FCE73A900E12F77 /* WDYHotController.h */,
+				66FD05C91FCE73A900E12F77 /* WDYHotController.m */,
+				66FD05CB1FCE73DE00E12F77 /* WDYTopController.h */,
+				66FD05CC1FCE73DE00E12F77 /* WDYTopController.m */,
+				66FD05CE1FCE741400E12F77 /* WDYVideoController.h */,
+				66FD05CF1FCE741400E12F77 /* WDYVideoController.m */,
+				66FD05D11FCE742600E12F77 /* WDYSocialController.h */,
+				66FD05D21FCE742600E12F77 /* WDYSocialController.m */,
+				66FD05D41FCE743A00E12F77 /* WDYPhotoController.h */,
+				66FD05D51FCE743A00E12F77 /* WDYPhotoController.m */,
+				66FD05D71FCE745200E12F77 /* WDYScienceController.h */,
+				66FD05D81FCE745200E12F77 /* WDYScienceController.m */,
+				66FD05DA1FCE747300E12F77 /* WDYCarController.h */,
+				66FD05DB1FCE747300E12F77 /* WDYCarController.m */,
+				66FD05DD1FCE748600E12F77 /* WDYArmyController.h */,
+				66FD05DE1FCE748600E12F77 /* WDYArmyController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -282,6 +322,7 @@
 				TargetAttributes = {
 					664FAEF21FCD0C6C005B9BF4 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -357,9 +398,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-frame-news/Pods-frame-news-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,6 +419,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FD05CA1FCE73A900E12F77 /* WDYHotController.m in Sources */,
+				66FD05D61FCE743A00E12F77 /* WDYPhotoController.m in Sources */,
+				66FD05D31FCE742600E12F77 /* WDYSocialController.m in Sources */,
 				664FAF011FCD0C6C005B9BF4 /* frame_news.xcdatamodeld in Sources */,
 				66FD05AB1FCD34DD00E12F77 /* WDYBaseNavController.m in Sources */,
 				66FD059F1FCD33EF00E12F77 /* WDYVerticalButton.m in Sources */,
@@ -380,10 +429,15 @@
 				664FAF091FCD0C6C005B9BF4 /* main.m in Sources */,
 				664FAEF81FCD0C6C005B9BF4 /* AppDelegate.m in Sources */,
 				66FD05A21FCD341D00E12F77 /* WDYTabBarContentView.m in Sources */,
+				66FD05D91FCE745200E12F77 /* WDYScienceController.m in Sources */,
+				66FD05D01FCE741400E12F77 /* WDYVideoController.m in Sources */,
 				66FD05A51FCD343400E12F77 /* WDYTabBarView.m in Sources */,
+				66FD05DC1FCE747300E12F77 /* WDYCarController.m in Sources */,
+				66FD05DF1FCE748600E12F77 /* WDYArmyController.m in Sources */,
 				66FD05BA1FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m in Sources */,
 				66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */,
 				66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */,
+				66FD05CD1FCE73DE00E12F77 /* WDYTopController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSET_PACK_MANIFEST_URL_PREFIX = "";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AWTS62H8S;
 				EXECUTABLE_PREFIX = "";
@@ -527,6 +582,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.frame-news";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "frame-news/Classes/Controller/Home/frame-news-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -538,6 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSET_PACK_MANIFEST_URL_PREFIX = "";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AWTS62H8S;
 				EXECUTABLE_PREFIX = "";
@@ -546,6 +605,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.frame-news";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "frame-news/Classes/Controller/Home/frame-news-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};

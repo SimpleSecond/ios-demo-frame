@@ -18,9 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // 全局设置导航栏颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+//    // 隐藏导航栏底部图片
+//    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    // 隐藏导航栏底部线条
+//    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
+    // 底部选项的全局设置
+//    [[UITabBar appearance] setShadowImage:[UIImage new]];
+//    [[UITabBar appearance] setBarTintColor:[UIColor redColor]];
+    
+    
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[WDYBaseTabBarController alloc] init];
-    
     [self.window makeKeyAndVisible];
     
     return YES;
