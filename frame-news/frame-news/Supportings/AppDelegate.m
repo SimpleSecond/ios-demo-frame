@@ -33,7 +33,13 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[WDYBaseTabBarController alloc] init];
-    [self.window makeKeyAndVisible];
+    
+    
+    // 注意：ios9开始，启动的应用必要设置根视图控制器
+//    [self.window makeKeyWindow]; // 设为主窗口
+//    self.window.hidden = NO; // 显示
+    [self.window makeKeyAndVisible]; // 设为主窗口，并显示
+
     
     return YES;
 }

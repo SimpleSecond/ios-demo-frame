@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WDEssTopicVoiceView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-uf-r9m" userLabel="占位图片">
+                    <rect key="frame" x="87.5" y="243.5" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sPW-uf-r9m" secondAttribute="height" multiplier="1:1" id="hOh-wC-oYs"/>
+                        <constraint firstAttribute="width" constant="200" id="sWK-r1-wQH"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="myI-gu-itD" userLabel="图片">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-ZH-Bwg" userLabel="按钮">
+                    <rect key="frame" x="156" y="312" width="63" height="63"/>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-0H-XXc" userLabel="时长">
+                    <rect key="frame" x="328.5" y="646" width="46.5" height="21"/>
+                    <color key="backgroundColor" red="0.39870689655172409" green="0.39870689655172409" blue="0.39870689655172409" alpha="0.65656154141104295" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D47-pe-zuj" userLabel="播放次数">
+                    <rect key="frame" x="312.5" y="0.0" width="62.5" height="19.5"/>
+                    <color key="backgroundColor" red="0.40882999005305032" green="0.40882999005305032" blue="0.40882999005305032" alpha="0.54878019555214719" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sPW-uf-r9m" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="DGN-aK-0AS"/>
+                <constraint firstItem="myI-gu-itD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IqR-lM-o02"/>
+                <constraint firstItem="4gr-ZH-Bwg" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Me8-yM-sfC"/>
+                <constraint firstItem="4gr-ZH-Bwg" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="N7l-fi-f4W"/>
+                <constraint firstAttribute="trailing" secondItem="D47-pe-zuj" secondAttribute="trailing" id="OTL-gZ-uzm"/>
+                <constraint firstItem="myI-gu-itD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qcr-Hg-G3n"/>
+                <constraint firstAttribute="bottom" secondItem="KPh-0H-XXc" secondAttribute="bottom" id="Qz2-6h-uUI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="myI-gu-itD" secondAttribute="trailing" id="aNS-6g-T47"/>
+                <constraint firstItem="D47-pe-zuj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gL8-WV-ZrS"/>
+                <constraint firstItem="sPW-uf-r9m" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="gmL-iF-oFk"/>
+                <constraint firstAttribute="trailing" secondItem="KPh-0H-XXc" secondAttribute="trailing" id="mRc-AG-jwc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="myI-gu-itD" secondAttribute="bottom" id="qcq-l0-CCS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="myI-gu-itD" id="51N-vI-um3"/>
+                <outlet property="playCountLabel" destination="D47-pe-zuj" id="Kqu-NJ-Tyw"/>
+                <outlet property="timeLabel" destination="KPh-0H-XXc" id="C3X-YD-wbr"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+        <image name="post_placeholderImage" width="145" height="30"/>
+    </resources>
+</document>

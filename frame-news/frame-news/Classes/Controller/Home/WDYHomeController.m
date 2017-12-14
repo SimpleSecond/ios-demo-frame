@@ -248,7 +248,7 @@
         item.textAlignment = NSTextAlignmentCenter;
         item.frame = CGRectMake(i*itemWidth, 0, itemWidth, 50);
         item.textColor = [UIColor blackColor];
-        item.font = [UIFont boldSystemFontOfSize:15];
+        item.font = [UIFont boldSystemFontOfSize:16];
         item.highlightedTextColor = [UIColor redColor];
         item.userInteractionEnabled = YES;
         item.tag = i;

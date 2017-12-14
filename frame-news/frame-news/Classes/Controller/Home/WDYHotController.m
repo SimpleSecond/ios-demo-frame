@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[[UIColor darkGrayColor] colorWithAlphaComponent:0.1]];
+    [self.view setBackgroundColor:[[UIColor darkGrayColor] colorWithAlphaComponent:0.2]];
 }
 
 @end

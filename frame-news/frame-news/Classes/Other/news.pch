@@ -19,6 +19,7 @@
 
 #import "Masonry.h"
 #import "ReactiveObjC/ReactiveObjC.h"
+#import "NSObject+RACKVOWrapper.h"
 
 
 #endif /* news_pch */

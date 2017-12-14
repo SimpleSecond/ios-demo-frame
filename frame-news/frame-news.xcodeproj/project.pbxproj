@@ -14,6 +14,9 @@
 		664FAF031FCD0C6C005B9BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664FAF021FCD0C6C005B9BF4 /* Assets.xcassets */; };
 		664FAF061FCD0C6C005B9BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664FAF041FCD0C6C005B9BF4 /* LaunchScreen.storyboard */; };
 		664FAF091FCD0C6C005B9BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FAF081FCD0C6C005B9BF4 /* main.m */; };
+		66B4867F1FD271A400CC1729 /* WDYRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4867E1FD271A400CC1729 /* WDYRedView.m */; };
+		66B486821FD2789E00CC1729 /* WDYFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B486811FD2789E00CC1729 /* WDYFlag.m */; };
+		66B486851FD5399B00CC1729 /* WDYCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B486841FD5399B00CC1729 /* WDYCategoryController.m */; };
 		66FD059F1FCD33EF00E12F77 /* WDYVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD059E1FCD33EF00E12F77 /* WDYVerticalButton.m */; };
 		66FD05A21FCD341D00E12F77 /* WDYTabBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05A11FCD341D00E12F77 /* WDYTabBarContentView.m */; };
 		66FD05A51FCD343400E12F77 /* WDYTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FD05A41FCD343400E12F77 /* WDYTabBarView.m */; };
@@ -43,6 +46,12 @@
 		664FAF051FCD0C6C005B9BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		664FAF071FCD0C6C005B9BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		664FAF081FCD0C6C005B9BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66B4867D1FD271A400CC1729 /* WDYRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYRedView.h; sourceTree = "<group>"; };
+		66B4867E1FD271A400CC1729 /* WDYRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYRedView.m; sourceTree = "<group>"; };
+		66B486801FD2789E00CC1729 /* WDYFlag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYFlag.h; sourceTree = "<group>"; };
+		66B486811FD2789E00CC1729 /* WDYFlag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYFlag.m; sourceTree = "<group>"; };
+		66B486831FD5399B00CC1729 /* WDYCategoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYCategoryController.h; sourceTree = "<group>"; };
+		66B486841FD5399B00CC1729 /* WDYCategoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYCategoryController.m; sourceTree = "<group>"; };
 		66FD05961FCD1DF700E12F77 /* news.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = news.pch; sourceTree = "<group>"; };
 		66FD059D1FCD33EF00E12F77 /* WDYVerticalButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDYVerticalButton.h; sourceTree = "<group>"; };
 		66FD059E1FCD33EF00E12F77 /* WDYVerticalButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDYVerticalButton.m; sourceTree = "<group>"; };
@@ -191,6 +200,8 @@
 		664FAF131FCD0DBA005B9BF4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				66B486801FD2789E00CC1729 /* WDYFlag.h */,
+				66B486811FD2789E00CC1729 /* WDYFlag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +209,8 @@
 		664FAF141FCD0DBA005B9BF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				66B4867D1FD271A400CC1729 /* WDYRedView.h */,
+				66B4867E1FD271A400CC1729 /* WDYRedView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,10 +252,10 @@
 			children = (
 				66FD05B11FCD364500E12F77 /* WDYHomeController.h */,
 				66FD05B21FCD364500E12F77 /* WDYHomeController.m */,
-				66FD05C81FCE73A900E12F77 /* WDYHotController.h */,
-				66FD05C91FCE73A900E12F77 /* WDYHotController.m */,
 				66FD05CB1FCE73DE00E12F77 /* WDYTopController.h */,
 				66FD05CC1FCE73DE00E12F77 /* WDYTopController.m */,
+				66FD05C81FCE73A900E12F77 /* WDYHotController.h */,
+				66FD05C91FCE73A900E12F77 /* WDYHotController.m */,
 				66FD05CE1FCE741400E12F77 /* WDYVideoController.h */,
 				66FD05CF1FCE741400E12F77 /* WDYVideoController.m */,
 				66FD05D11FCE742600E12F77 /* WDYSocialController.h */,
@@ -262,6 +275,8 @@
 		66FD05AE1FCD361C00E12F77 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				66B486831FD5399B00CC1729 /* WDYCategoryController.h */,
+				66B486841FD5399B00CC1729 /* WDYCategoryController.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -423,17 +438,20 @@
 				66FD05D61FCE743A00E12F77 /* WDYPhotoController.m in Sources */,
 				66FD05D31FCE742600E12F77 /* WDYSocialController.m in Sources */,
 				664FAF011FCD0C6C005B9BF4 /* frame_news.xcdatamodeld in Sources */,
+				66B486851FD5399B00CC1729 /* WDYCategoryController.m in Sources */,
 				66FD05AB1FCD34DD00E12F77 /* WDYBaseNavController.m in Sources */,
 				66FD059F1FCD33EF00E12F77 /* WDYVerticalButton.m in Sources */,
 				66FD05A81FCD34BF00E12F77 /* WDYBaseTabBarController.m in Sources */,
 				664FAF091FCD0C6C005B9BF4 /* main.m in Sources */,
 				664FAEF81FCD0C6C005B9BF4 /* AppDelegate.m in Sources */,
+				66B4867F1FD271A400CC1729 /* WDYRedView.m in Sources */,
 				66FD05A21FCD341D00E12F77 /* WDYTabBarContentView.m in Sources */,
 				66FD05D91FCE745200E12F77 /* WDYScienceController.m in Sources */,
 				66FD05D01FCE741400E12F77 /* WDYVideoController.m in Sources */,
 				66FD05A51FCD343400E12F77 /* WDYTabBarView.m in Sources */,
 				66FD05DC1FCE747300E12F77 /* WDYCarController.m in Sources */,
 				66FD05DF1FCE748600E12F77 /* WDYArmyController.m in Sources */,
+				66B486821FD2789E00CC1729 /* WDYFlag.m in Sources */,
 				66FD05BA1FCD5CED00E12F77 /* UINavigationController+BackgroundAlpha.m in Sources */,
 				66FD05B31FCD364500E12F77 /* WDYHomeController.m in Sources */,
 				66FD05B61FCD36A800E12F77 /* WDYBaseViewController.m in Sources */,
