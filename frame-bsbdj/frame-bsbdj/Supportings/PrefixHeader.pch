@@ -18,10 +18,12 @@
 
 #import "UIView+WDViewExtension.h"
 #import "UIBarButtonItem+WDButtonItemExtension.h"
-#import "WDConstant.h"
 #import "NSString+WDExtension.h"
 #import "NSDate+WDExtension.h"
 #import "NSCalendar+WDExtension.h"
+#import "WDConst.h"
+#import "UIImage+WDExtension.h"
+#import "UIImageView+WDExtension.h"
 
 
 /** DEBUG开始 */
@@ -36,6 +38,8 @@
 #define WDColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 #define WDColor(r,g,b) WDColorA((r), (g), (b), (255.0))
 #define WDRandomColor WDColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define WDCommonColor WDColor(222, 222, 222)
+
 /** 屏幕的宽度和高度 */
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

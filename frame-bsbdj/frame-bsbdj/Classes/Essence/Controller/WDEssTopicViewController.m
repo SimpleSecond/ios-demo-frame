@@ -12,6 +12,8 @@
 #import "WDRefreshFooter.h"
 #import "WDTopic.h"
 #import "WDEssTopicCell.h"
+#import "WDNewViewController.h"
+#import "WDCommentViewController.h"
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -21,7 +23,8 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
 @interface WDEssTopicViewController ()
 @property (nonatomic, strong) NSMutableArray *topics;
 @property (nonatomic, strong) NSString *maxtime;
-
+/** 声明这个方法的目的 : 为了能够使用点语法的智能提示 */
+- (NSString *)aParam;
 @end
 
 @implementation WDEssTopicViewController
@@ -33,7 +36,16 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
     }
     return _topics;
 }
-
+- (NSString *)aParam
+{
+    NSLog(@"%@", NSStringFromClass(self.parentViewController.class));
+    
+    if (self.parentViewController.class == [WDNewViewController class]) {
+        NSLog(@"WDNewViewController");
+        return @"newlist";
+    }
+    return @"list";
+}
 - (WDTopicType)type
 {
     return 0;
@@ -68,6 +80,20 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
     [self loadAllDatas];
     // 设置下拉刷新
     [self setupRefresh];
+    // 添加监听通知
+    [self setupNote];
+}
+
+- (void)dealloc
+{
+    // 移除通知监听
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Notification
+- (void)setupNote
+{
+    
 }
 
 #pragma mark - Refresh
@@ -89,7 +115,7 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
 {
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.aParam;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     
@@ -108,7 +134,7 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
 {
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.aParam;
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
     params[@"maxtime"] = self.maxtime;
@@ -151,6 +177,13 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
 {
     WDTopic *topic = (WDTopic *)self.topics[indexPath.row];
     return topic.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WDCommentViewController *comment = [[WDCommentViewController alloc] init];
+    comment.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:comment animated:YES];
 }
 
 @end

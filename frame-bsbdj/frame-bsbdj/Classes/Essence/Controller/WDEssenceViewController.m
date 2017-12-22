@@ -13,6 +13,7 @@
 #import "WDEssAudioController.h"
 #import "WDEssPhotoController.h"
 #import "WDEssEpisodeController.h"
+#import "WDRecommenTagViewController.h"
 
 
 @interface WDEssenceViewController () <UIScrollViewDelegate>
@@ -21,8 +22,6 @@
 @property (nonatomic, strong) WDEssTitleButton *selectedTitleButton;
 @property (nonatomic, strong) UIView *indicatorView;
 @property (nonatomic, strong) UIScrollView *contentScrollView;
-// 自控制器集合
-@property (nonatomic, strong) NSMutableArray *childControllers;
 
 @end
 
@@ -60,26 +59,12 @@
     return _contentScrollView;
 }
 
--(NSMutableArray *)childControllers
-{
-    if (!_childControllers) {
-        _childControllers = [NSMutableArray array];
-        [_childControllers addObject:[[WDEssAllController alloc] init]];
-        [_childControllers addObject:[[WDEssVideoController alloc] init]];
-        [_childControllers addObject:[[WDEssPhotoController alloc] init]];
-        [_childControllers addObject:[[WDEssAudioController alloc] init]];
-        [_childControllers addObject:[[WDEssEpisodeController alloc] init]];
-    }
-    return _childControllers;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:WDColor(222, 222, 222)];
-    // 禁止自动调整
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    // 禁止自动调整
-    self.contentScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    
+    
+    // 加载自控制器
+    [self setupChildViewControllers];
     
     // 设置导航
     [self setupNav];
@@ -87,10 +72,45 @@
     [self setupContentScrollView];
     // 设置titleView
     [self setupTitleView];
+    // 添加默认自控制区视图
+    [self addChildVcView];
 }
+
+- (void)setupChildViewControllers
+{
+    WDEssAllController *allVc = [[WDEssAllController alloc] init];
+    [self addChildViewController:allVc];
+    WDEssVideoController *videoVc = [[WDEssVideoController alloc] init];
+    [self addChildViewController:videoVc];
+    WDEssPhotoController *photoVc = [[WDEssPhotoController alloc] init];
+    [self addChildViewController:photoVc];
+    WDEssAudioController *audioVc = [[WDEssAudioController alloc] init];
+    [self addChildViewController:audioVc];
+    WDEssEpisodeController *epiVc = [[WDEssEpisodeController alloc] init];
+    [self addChildViewController:epiVc];
+}
+
+- (void)addChildVcView
+{
+    // 子控制器的索引
+    NSUInteger index = self.contentScrollView.contentOffset.x / self.contentScrollView.wd_width;
+    
+    // 取出子控制器
+    UIViewController *childVc = self.childViewControllers[index];
+    if ([childVc isViewLoaded]) return;
+    
+    childVc.view.frame = self.contentScrollView.bounds;
+    [self.contentScrollView addSubview:childVc.view];
+}
+
 
 -(void)setupContentScrollView
 {
+    // 禁止自动调整
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    // 禁止自动调整
+    self.contentScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    
     // 设置contentScrollView的大小
     [self.contentScrollView setFrame:self.view.bounds];
     // 设置内容大小
@@ -157,7 +177,7 @@
 {
     NSUInteger index = self.contentScrollView.contentOffset.x / self.contentScrollView.wd_width;
     // 加载视图
-    UIViewController *viewController = self.childControllers[index];
+    UIViewController *viewController = self.childViewControllers[index];
     if (viewController.view.superview != nil) {
         return;
     }
@@ -175,7 +195,9 @@
 
 - (void)tagSubIconClick
 {
-    WDLog(@"%s", __func__);
+    // 进入推荐界面
+    WDRecommenTagViewController *viewCtrl = [[WDRecommenTagViewController alloc] init];
+    [self.navigationController pushViewController:viewCtrl animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate

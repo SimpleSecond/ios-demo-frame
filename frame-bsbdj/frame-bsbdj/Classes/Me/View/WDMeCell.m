@@ -33,8 +33,8 @@
         return;
     }
     // 如有图片，则设置图片边距（5）
-    self.imageView.wd_y = WDSmallMargin;
-    self.imageView.wd_height = self.contentView.wd_height - WDSmallMargin * 2;
+    self.imageView.wd_y = WDMarginSmall;
+    self.imageView.wd_height = self.contentView.wd_height - WDMarginSmall * 2;
     // 设置文字距离图片的距离10
     self.textLabel.wd_x = CGRectGetMaxX(self.imageView.frame) + WDMargin;
 }

@@ -15,9 +15,6 @@
 
 +(void)load
 {
-    [WDTopic mj_setupObjectClassInArray:^NSDictionary *{
-        return @{@"top_cmt" : [WDComment class]};
-    }];
     
     [WDTopic mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
         return @{
@@ -25,6 +22,12 @@
                  @"small_image" : @"image0",
                  @"middle_image" : @"image2",
                  @"large_image" : @"image1",
+                 };
+    }];
+    
+    [NSObject mj_setupReplacedKeyFromPropertyName:^NSDictionary *{
+        return @{
+                 @"ID" : @"id"
                  };
     }];
 }

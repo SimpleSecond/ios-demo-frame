@@ -8,8 +8,9 @@
 
 #import "WDEssTopicPictureView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "WDTopic.h"
 #import <AFNetworking/AFNetworking.h>
+#import "WDTopic.h"
+#import "WDSeeBigViewController.h"
 
 @interface WDEssTopicPictureView ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -25,6 +26,17 @@
 {
     self.autoresizingMask = UIViewAutoresizingNone;
     [super awakeFromNib];
+    
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBig)]];
+    //[self.seaLargeView addTarget:self action:@selector(seeBig) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)seeBig
+{
+    WDSeeBigViewController *bigVC = [[WDSeeBigViewController alloc] init];
+    bigVC.topic = self.topic;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:bigVC animated:YES completion:nil];
 }
 
 - (void)setTopic:(WDTopic *)topic
@@ -59,7 +71,6 @@
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         self.imageView.clipsToBounds = NO;
     }
-    
 }
 
 @end

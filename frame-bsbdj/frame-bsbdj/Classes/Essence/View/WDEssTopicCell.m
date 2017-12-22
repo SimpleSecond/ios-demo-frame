@@ -85,7 +85,7 @@
 {
     _topic = topic;
     
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profileImageView wd_setupHeader:topic.profile_image];
     self.nameLabel.text = _topic.name;
     self.timeLabel.text = _topic.created_at;
     self.content.text = _topic.text;

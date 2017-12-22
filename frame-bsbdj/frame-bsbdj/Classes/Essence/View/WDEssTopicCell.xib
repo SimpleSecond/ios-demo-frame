@@ -32,12 +32,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dUM-1s-aZt" secondAttribute="height" multiplier="1:1" id="YMs-cK-KNa"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCB-mV-Fip" userLabel="右侧按钮">
                                 <rect key="frame" x="280" y="10" width="30" height="30"/>

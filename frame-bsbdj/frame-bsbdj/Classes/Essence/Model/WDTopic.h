@@ -22,12 +22,13 @@ typedef NS_ENUM(NSUInteger, WDTopicType) {
     WDTopicTypeVideo = 41
 };
 
-
+@class WDComment;
 @interface WDTopic : NSObject
 
 // 计算cell的高度
 @property (nonatomic, assign) CGFloat cellHeight;
 
+@property (nonatomic, copy) NSString *ID;
 // 用户名字
 @property (nonatomic, copy) NSString *name;
 // 用户头像
@@ -44,6 +45,9 @@ typedef NS_ENUM(NSUInteger, WDTopicType) {
 @property (nonatomic, assign) NSInteger repost;
 // 评论数量
 @property (nonatomic, assign) NSInteger comment;
+
+/** 最热评论 */
+@property (nonatomic, strong) WDComment *top_cmt;
 
 // 帖子类型
 @property (nonatomic, assign) WDTopicType type;
