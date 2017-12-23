@@ -8,19 +8,45 @@
 
 #import "AppDelegate.h"
 #import "WDBaseTabBarController.h"
+#import "WDTopWindow.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITabBarControllerDelegate>
+
+// 记录上一次选中的子控制器的索引
+@property (nonatomic, assign) NSUInteger lastSelectedIndex;
 
 @end
 
 @implementation AppDelegate
 
 
+#pragma mark - UITabBarControllerDelegate
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if (tabBarController.selectedIndex == self.lastSelectedIndex) { // 重复点击同一个TabBar按钮
+        // 发出通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:WDTabBarDidRepeatClickNotification object:nil];
+    }
+    // 记录目前选中的索引
+    self.lastSelectedIndex = tabBarController.selectedIndex;
+}
+
+
+#pragma mark - UIApplicationDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window setRootViewController:[[WDBaseTabBarController alloc] init]];
+    
+    // 设置根控制器
+    WDBaseTabBarController *rootVC = [[WDBaseTabBarController alloc] init];
+    rootVC.delegate = self;
+    [self.window setRootViewController:rootVC];
+    
+    // 显示窗口
     [self.window makeKeyAndVisible];
+    
+    // 添加一个最高级别的顶层window
+    [WDTopWindow show];
     
     return YES;
 }

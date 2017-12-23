@@ -27,6 +27,7 @@
 @property (nonatomic, strong) NSArray<WDComment *> *hotestComments;
 // 最新评论数据
 @property (nonatomic, strong) NSMutableArray<WDComment *> *latestComments;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomMargin;
 
 
 // 最热评论
@@ -63,13 +64,15 @@ static NSString * const WDSectionHeaderlId = @"header";
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
+    self.topic.top_cmt = self.savedTopCmt;
+    self.topic.cellHeight = 0;
 }
 
 - (void)setupBase
 {
     self.navigationItem.title = @"评论";
     // 监听键盘通知
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector: name: object: ]
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardDidChangeFrameNotification object:nil];
 }
 
 - (void)setupTable
@@ -122,6 +125,21 @@ static NSString * const WDSectionHeaderlId = @"header";
     
     // 设置header
     self.tableView.tableHeaderView = header;
+}
+
+#pragma mark - 监听键盘的显示
+- (void)keyboardWillChangeFrame:(NSNotification *)note
+{
+    // 修改约束
+    CGFloat keyboardY = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].origin.y;
+    CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
+    self.bottomMargin.constant = screenH - keyboardY;
+    
+    // 执行动画
+    CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    [UIView animateWithDuration:duration animations:^{
+        [self.view layoutIfNeeded];
+    }];
 }
 
 

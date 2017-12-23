@@ -93,7 +93,8 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
 #pragma mark - Notification
 - (void)setupNote
 {
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarButtonDidRepeatClick) name:WDTabBarDidRepeatClickNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleButtonDidRepeatClick) name:WDTitleButtonDidRepeatClickNotification object:nil];
 }
 
 #pragma mark - Refresh
@@ -108,7 +109,24 @@ static NSString * const TOPIC_CELL_ID = @"WDEssTopicCell";
     self.tableView.mj_footer = [WDRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreDatas)];
 }
 
+#pragma mark - 监听广播
+//
+- (void)tabBarButtonDidRepeatClick
+{
+    // 如果当前控制器的view不在window上，就直接返回，否则这个方法调用5次
+    if (self.view.window == nil) return;
+    
+    // 如果当前控制器的view跟window没有重叠，就直接返回
+    if (![self.view intersectWithView:self.view.window]) return;
+    
+    // 进行下拉刷新
+    [self.tableView.mj_header beginRefreshing];
+}
 
+- (void)titleButtonDidRepeatClick
+{
+    [self tabBarButtonDidRepeatClick];
+}
 
 #pragma mark - 加载网络数据
 - (void)loadAllDatas

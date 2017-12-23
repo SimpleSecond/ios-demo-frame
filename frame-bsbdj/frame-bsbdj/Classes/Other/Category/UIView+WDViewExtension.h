@@ -22,4 +22,7 @@
 // 通过与类名相同的xib文件获取视图
 + (instancetype)viewFromXib;
 
+//
+- (BOOL)intersectWithView:(UIView *)view;
+
 @end

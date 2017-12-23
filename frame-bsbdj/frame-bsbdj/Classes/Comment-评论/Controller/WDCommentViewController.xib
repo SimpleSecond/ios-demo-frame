@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDCommentViewController">
             <connections>
+                <outlet property="bottomMargin" destination="EZb-bm-n4Y" id="TAY-0L-BCl"/>
                 <outlet property="tableView" destination="Usp-vn-1fl" id="yRB-Du-QYa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

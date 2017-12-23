@@ -28,6 +28,7 @@
 		665564571FEBA2320083E789 /* WDCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 665564551FEBA2320083E789 /* WDCommentCell.m */; };
 		665564581FEBA2320083E789 /* WDCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665564561FEBA2320083E789 /* WDCommentCell.xib */; };
 		6655645B1FEBA3830083E789 /* WDCommentSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655645A1FEBA3830083E789 /* WDCommentSectionHeader.m */; };
+		6655645E1FEE08FE0083E789 /* WDTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6655645D1FEE08FE0083E789 /* WDTopWindow.m */; };
 		6658A4F91FD63ADB00AF10A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6658A4F81FD63ADB00AF10A6 /* AppDelegate.m */; };
 		6658A4FF1FD63ADB00AF10A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658A4FD1FD63ADB00AF10A6 /* Main.storyboard */; };
 		6658A5021FD63ADB00AF10A6 /* frame_bsbdj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6658A5001FD63ADB00AF10A6 /* frame_bsbdj.xcdatamodeld */; };
@@ -123,6 +124,8 @@
 		665564561FEBA2320083E789 /* WDCommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDCommentCell.xib; sourceTree = "<group>"; };
 		665564591FEBA3830083E789 /* WDCommentSectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDCommentSectionHeader.h; sourceTree = "<group>"; };
 		6655645A1FEBA3830083E789 /* WDCommentSectionHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDCommentSectionHeader.m; sourceTree = "<group>"; };
+		6655645C1FEE08FE0083E789 /* WDTopWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDTopWindow.h; sourceTree = "<group>"; };
+		6655645D1FEE08FE0083E789 /* WDTopWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDTopWindow.m; sourceTree = "<group>"; };
 		6658A4F41FD63ADB00AF10A6 /* frame-bsbdj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "frame-bsbdj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6658A4F71FD63ADB00AF10A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6658A4F81FD63ADB00AF10A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -498,6 +501,8 @@
 				660BA0EE1FDB023B0031F35A /* WDRefreshHeader.m */,
 				66CBD06B1FDB5F40005FEC98 /* WDRefreshFooter.h */,
 				66CBD06C1FDB5F40005FEC98 /* WDRefreshFooter.m */,
+				6655645C1FEE08FE0083E789 /* WDTopWindow.h */,
+				6655645D1FEE08FE0083E789 /* WDTopWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -839,6 +844,7 @@
 				66F8C14A1FE291BA008FBBF6 /* WDEssTopicViewController.m in Sources */,
 				66F8C07C1FDE52BF008FBBF6 /* WDEssTopicPictureView.m in Sources */,
 				66C831B51FD9443100CCCCB7 /* NSString+WDExtension.m in Sources */,
+				6655645E1FEE08FE0083E789 /* WDTopWindow.m in Sources */,
 				6658A5271FD6625000AF10A6 /* WDFollowViewController.m in Sources */,
 				660BA0E61FDA81210031F35A /* WDEssAllController.m in Sources */,
 				661C3F8F1FD9287A00B82BF1 /* WDMeWebViewController.m in Sources */,

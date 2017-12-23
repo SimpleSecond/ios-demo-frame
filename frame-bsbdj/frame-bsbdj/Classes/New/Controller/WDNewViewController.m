@@ -158,6 +158,11 @@
 
 -(void)titleClick:(WDEssTitleButton *)sender
 {
+    // 某个标题按钮被重复点击
+    if (sender == self.selectedTitleButton) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:WDTitleButtonDidRepeatClickNotification object:nil];
+    }
+    
     // 选中按钮的切换
     self.selectedTitleButton.selected = NO;
     sender.selected = YES;
