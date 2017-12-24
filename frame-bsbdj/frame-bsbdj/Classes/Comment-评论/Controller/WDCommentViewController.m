@@ -132,8 +132,7 @@ static NSString * const WDSectionHeaderlId = @"header";
 {
     // 修改约束
     CGFloat keyboardY = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].origin.y;
-    CGFloat screenH = [UIScreen mainScreen].bounds.size.height;
-    self.bottomMargin.constant = screenH - keyboardY;
+    self.bottomMargin.constant = SCREEN_HEIGHT - keyboardY;
     
     // 执行动画
     CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
