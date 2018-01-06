@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66B319C51FFD1C8000E130BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319C41FFD1C8000E130BC /* AppDelegate.m */; };
+		66B319C81FFD1C8000E130BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319C71FFD1C8000E130BC /* ViewController.m */; };
+		66B319CB1FFD1C8000E130BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B319C91FFD1C8000E130BC /* Main.storyboard */; };
+		66B319CE1FFD1C8000E130BC /* rongyun_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66B319CC1FFD1C8000E130BC /* rongyun_demo.xcdatamodeld */; };
+		66B319D01FFD1C8000E130BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B319CF1FFD1C8000E130BC /* Assets.xcassets */; };
+		66B319D31FFD1C8000E130BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B319D11FFD1C8000E130BC /* LaunchScreen.storyboard */; };
+		66B319D61FFD1C8000E130BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319D51FFD1C8000E130BC /* main.m */; };
+		66B319E11FFDC85900E130BC /* WDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319E01FFDC85900E130BC /* WDLoginViewController.m */; };
+		66B319E41FFDDBC900E130BC /* WDWaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319E31FFDDBC900E130BC /* WDWaitingViewController.m */; };
+		66B319E71FFDDBE500E130BC /* WDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319E61FFDDBE500E130BC /* WDNavigationViewController.m */; };
+		66B319EA1FFE04ED00E130BC /* WDConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319E91FFE04ED00E130BC /* WDConversationViewController.m */; };
+		66B319ED1FFE122A00E130BC /* WDConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B319EC1FFE122A00E130BC /* WDConversationListViewController.m */; };
+		7C7BFCEE3F02A139C755CE40 /* Pods_rongyun_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419B79243E3C711FFD06DF4A /* Pods_rongyun_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		419B79243E3C711FFD06DF4A /* Pods_rongyun_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rongyun_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C001D45A3EA36A3EACC40CA /* Pods-rongyun-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rongyun-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rongyun-demo/Pods-rongyun-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		66B319C01FFD1C8000E130BC /* rongyun-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rongyun-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B319C31FFD1C8000E130BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		66B319C41FFD1C8000E130BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66B319C61FFD1C8000E130BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		66B319C71FFD1C8000E130BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66B319CA1FFD1C8000E130BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66B319CD1FFD1C8000E130BC /* rongyun_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rongyun_demo.xcdatamodel; sourceTree = "<group>"; };
+		66B319CF1FFD1C8000E130BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66B319D21FFD1C8000E130BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66B319D41FFD1C8000E130BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B319D51FFD1C8000E130BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66B319DF1FFDC85900E130BC /* WDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDLoginViewController.h; sourceTree = "<group>"; };
+		66B319E01FFDC85900E130BC /* WDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLoginViewController.m; sourceTree = "<group>"; };
+		66B319E21FFDDBC900E130BC /* WDWaitingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDWaitingViewController.h; sourceTree = "<group>"; };
+		66B319E31FFDDBC900E130BC /* WDWaitingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDWaitingViewController.m; sourceTree = "<group>"; };
+		66B319E51FFDDBE500E130BC /* WDNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDNavigationViewController.h; sourceTree = "<group>"; };
+		66B319E61FFDDBE500E130BC /* WDNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDNavigationViewController.m; sourceTree = "<group>"; };
+		66B319E81FFE04ED00E130BC /* WDConversationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDConversationViewController.h; sourceTree = "<group>"; };
+		66B319E91FFE04ED00E130BC /* WDConversationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDConversationViewController.m; sourceTree = "<group>"; };
+		66B319EB1FFE122A00E130BC /* WDConversationListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDConversationListViewController.h; sourceTree = "<group>"; };
+		66B319EC1FFE122A00E130BC /* WDConversationListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDConversationListViewController.m; sourceTree = "<group>"; };
+		E439A68A6A2F79D5C10B2387 /* Pods-rongyun-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rongyun-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-rongyun-demo/Pods-rongyun-demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66B319BD1FFD1C8000E130BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7BFCEE3F02A139C755CE40 /* Pods_rongyun_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66B319B71FFD1C8000E130BC = {
+			isa = PBXGroup;
+			children = (
+				66B319C21FFD1C8000E130BC /* rongyun-demo */,
+				66B319C11FFD1C8000E130BC /* Products */,
+				752CF26C9813D5D42FB410CA /* Pods */,
+				E4B6119E579604582817F081 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66B319C11FFD1C8000E130BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B319C01FFD1C8000E130BC /* rongyun-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B319C21FFD1C8000E130BC /* rongyun-demo */ = {
+			isa = PBXGroup;
+			children = (
+				66B319DC1FFDC7E800E130BC /* Controller */,
+				66B319DD1FFDC7E900E130BC /* Supporting */,
+				66B319DE1FFDC7E900E130BC /* View */,
+				66B319C31FFD1C8000E130BC /* AppDelegate.h */,
+				66B319C41FFD1C8000E130BC /* AppDelegate.m */,
+				66B319D51FFD1C8000E130BC /* main.m */,
+			);
+			path = "rongyun-demo";
+			sourceTree = "<group>";
+		};
+		66B319DC1FFDC7E800E130BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66B319C61FFD1C8000E130BC /* ViewController.h */,
+				66B319C71FFD1C8000E130BC /* ViewController.m */,
+				66B319E51FFDDBE500E130BC /* WDNavigationViewController.h */,
+				66B319E61FFDDBE500E130BC /* WDNavigationViewController.m */,
+				66B319DF1FFDC85900E130BC /* WDLoginViewController.h */,
+				66B319E01FFDC85900E130BC /* WDLoginViewController.m */,
+				66B319E21FFDDBC900E130BC /* WDWaitingViewController.h */,
+				66B319E31FFDDBC900E130BC /* WDWaitingViewController.m */,
+				66B319EB1FFE122A00E130BC /* WDConversationListViewController.h */,
+				66B319EC1FFE122A00E130BC /* WDConversationListViewController.m */,
+				66B319E81FFE04ED00E130BC /* WDConversationViewController.h */,
+				66B319E91FFE04ED00E130BC /* WDConversationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66B319DD1FFDC7E900E130BC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				66B319C91FFD1C8000E130BC /* Main.storyboard */,
+				66B319CF1FFD1C8000E130BC /* Assets.xcassets */,
+				66B319D11FFD1C8000E130BC /* LaunchScreen.storyboard */,
+				66B319D41FFD1C8000E130BC /* Info.plist */,
+				66B319CC1FFD1C8000E130BC /* rongyun_demo.xcdatamodeld */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		66B319DE1FFDC7E900E130BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		752CF26C9813D5D42FB410CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C001D45A3EA36A3EACC40CA /* Pods-rongyun-demo.debug.xcconfig */,
+				E439A68A6A2F79D5C10B2387 /* Pods-rongyun-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4B6119E579604582817F081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419B79243E3C711FFD06DF4A /* Pods_rongyun_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66B319BF1FFD1C8000E130BC /* rongyun-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B319D91FFD1C8000E130BC /* Build configuration list for PBXNativeTarget "rongyun-demo" */;
+			buildPhases = (
+				8DAB5442D53F9CCDA5B0D367 /* [CP] Check Pods Manifest.lock */,
+				66B319BC1FFD1C8000E130BC /* Sources */,
+				66B319BD1FFD1C8000E130BC /* Frameworks */,
+				66B319BE1FFD1C8000E130BC /* Resources */,
+				ECD8F06C48EDA9D842B411E6 /* [CP] Embed Pods Frameworks */,
+				9217AF135DC6060BD7828642 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rongyun-demo";
+			productName = "rongyun-demo";
+			productReference = 66B319C01FFD1C8000E130BC /* rongyun-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66B319B81FFD1C8000E130BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WD;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					66B319BF1FFD1C8000E130BC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 66B319BB1FFD1C8000E130BC /* Build configuration list for PBXProject "rongyun-demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66B319B71FFD1C8000E130BC;
+			productRefGroup = 66B319C11FFD1C8000E130BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66B319BF1FFD1C8000E130BC /* rongyun-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66B319BE1FFD1C8000E130BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B319D31FFD1C8000E130BC /* LaunchScreen.storyboard in Resources */,
+				66B319D01FFD1C8000E130BC /* Assets.xcassets in Resources */,
+				66B319CB1FFD1C8000E130BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DAB5442D53F9CCDA5B0D367 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rongyun-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9217AF135DC6060BD7828642 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rongyun-demo/Pods-rongyun-demo-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rongyun-demo/Pods-rongyun-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD8F06C48EDA9D842B411E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rongyun-demo/Pods-rongyun-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rongyun-demo/Pods-rongyun-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66B319BC1FFD1C8000E130BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B319C81FFD1C8000E130BC /* ViewController.m in Sources */,
+				66B319C51FFD1C8000E130BC /* AppDelegate.m in Sources */,
+				66B319ED1FFE122A00E130BC /* WDConversationListViewController.m in Sources */,
+				66B319D61FFD1C8000E130BC /* main.m in Sources */,
+				66B319E71FFDDBE500E130BC /* WDNavigationViewController.m in Sources */,
+				66B319E41FFDDBC900E130BC /* WDWaitingViewController.m in Sources */,
+				66B319E11FFDC85900E130BC /* WDLoginViewController.m in Sources */,
+				66B319EA1FFE04ED00E130BC /* WDConversationViewController.m in Sources */,
+				66B319CE1FFD1C8000E130BC /* rongyun_demo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66B319C91FFD1C8000E130BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66B319CA1FFD1C8000E130BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66B319D11FFD1C8000E130BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66B319D21FFD1C8000E130BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66B319D71FFD1C8000E130BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66B319D81FFD1C8000E130BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66B319DA1FFD1C8000E130BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C001D45A3EA36A3EACC40CA /* Pods-rongyun-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AWTS62H8S;
+				INFOPLIST_FILE = "rongyun-demo/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.rongyun-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66B319DB1FFD1C8000E130BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E439A68A6A2F79D5C10B2387 /* Pods-rongyun-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AWTS62H8S;
+				INFOPLIST_FILE = "rongyun-demo/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.rongyun-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66B319BB1FFD1C8000E130BC /* Build configuration list for PBXProject "rongyun-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B319D71FFD1C8000E130BC /* Debug */,
+				66B319D81FFD1C8000E130BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66B319D91FFD1C8000E130BC /* Build configuration list for PBXNativeTarget "rongyun-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B319DA1FFD1C8000E130BC /* Debug */,
+				66B319DB1FFD1C8000E130BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		66B319CC1FFD1C8000E130BC /* rongyun_demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66B319CD1FFD1C8000E130BC /* rongyun_demo.xcdatamodel */,
+			);
+			currentVersion = 66B319CD1FFD1C8000E130BC /* rongyun_demo.xcdatamodel */;
+			path = rongyun_demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 66B319B81FFD1C8000E130BC /* Project object */;
+}

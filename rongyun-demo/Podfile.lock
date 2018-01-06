@@ -1,0 +1,18 @@
+PODS:
+  - Masonry (1.1.0)
+  - RongCloudIM/IMKit (2.8.25):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.25)
+
+DEPENDENCIES:
+  - Masonry
+  - RongCloudIM/IMKit (~> 2.8.3)
+  - RongCloudIM/IMLib (~> 2.8.3)
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RongCloudIM: cb0c423bdb9842246b85940097627a977256a8a0
+
+PODFILE CHECKSUM: 3749b6029c16f13f05e6b16fa6d1fe04885d9698
+
+COCOAPODS: 1.3.1

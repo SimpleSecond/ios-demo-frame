@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6629150B1FF1F9C70008F65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629150A1FF1F9C70008F65B /* AppDelegate.m */; };
+		6629150E1FF1F9C70008F65B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629150D1FF1F9C70008F65B /* ViewController.m */; };
+		662915111FF1F9C70008F65B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6629150F1FF1F9C70008F65B /* Main.storyboard */; };
+		662915141FF1F9C70008F65B /* ios_shanGeView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 662915121FF1F9C70008F65B /* ios_shanGeView.xcdatamodeld */; };
+		662915161FF1F9C70008F65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662915151FF1F9C70008F65B /* Assets.xcassets */; };
+		662915191FF1F9C70008F65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662915171FF1F9C70008F65B /* LaunchScreen.storyboard */; };
+		6629151C1FF1F9C70008F65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629151B1FF1F9C70008F65B /* main.m */; };
+		662915661FF21A0D0008F65B /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 662915651FF21A0D0008F65B /* data.plist */; };
+		6629156E1FF21FA30008F65B /* 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6629156A1FF21FA20008F65B /* 1.txt */; };
+		6629156F1FF21FA30008F65B /* 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6629156B1FF21FA30008F65B /* 2.txt */; };
+		662915701FF21FA30008F65B /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6629156C1FF21FA30008F65B /* 3.txt */; };
+		662915711FF21FA30008F65B /* 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6629156D1FF21FA30008F65B /* 0.txt */; };
+		662915791FF2201C0008F65B /* UIView+WDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 662915781FF2201C0008F65B /* UIView+WDExtension.m */; };
+		6629157D1FF222760008F65B /* WDItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629157C1FF222760008F65B /* WDItem.m */; };
+		662915801FF224260008F65B /* WDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6629157F1FF224260008F65B /* WDBaseModel.m */; };
+		662915831FF22CB60008F65B /* WDGridLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 662915821FF22CB60008F65B /* WDGridLayoutView.m */; };
+		662915861FF236AF0008F65B /* WDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 662915851FF236AF0008F65B /* WDTableViewCell.m */; };
+		FD7C0295D08ADD685680DF3D /* Pods_ios_shanGeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEB4A83C200EC4A38C83F6F /* Pods_ios_shanGeView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FEB4A83C200EC4A38C83F6F /* Pods_ios_shanGeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_shanGeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		662915061FF1F9C70008F65B /* ios-shanGeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-shanGeView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		662915091FF1F9C70008F65B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6629150A1FF1F9C70008F65B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6629150C1FF1F9C70008F65B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6629150D1FF1F9C70008F65B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		662915101FF1F9C70008F65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		662915131FF1F9C70008F65B /* ios_shanGeView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_shanGeView.xcdatamodel; sourceTree = "<group>"; };
+		662915151FF1F9C70008F65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		662915181FF1F9C70008F65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6629151A1FF1F9C70008F65B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6629151B1FF1F9C70008F65B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		662915651FF21A0D0008F65B /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		6629156A1FF21FA20008F65B /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.txt; sourceTree = "<group>"; };
+		6629156B1FF21FA30008F65B /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.txt; sourceTree = "<group>"; };
+		6629156C1FF21FA30008F65B /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
+		6629156D1FF21FA30008F65B /* 0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 0.txt; sourceTree = "<group>"; };
+		662915771FF2201C0008F65B /* UIView+WDExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WDExtension.h"; sourceTree = "<group>"; };
+		662915781FF2201C0008F65B /* UIView+WDExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WDExtension.m"; sourceTree = "<group>"; };
+		6629157A1FF2203C0008F65B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6629157B1FF222760008F65B /* WDItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDItem.h; sourceTree = "<group>"; };
+		6629157C1FF222760008F65B /* WDItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDItem.m; sourceTree = "<group>"; };
+		6629157E1FF224260008F65B /* WDBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDBaseModel.h; sourceTree = "<group>"; };
+		6629157F1FF224260008F65B /* WDBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBaseModel.m; sourceTree = "<group>"; };
+		662915811FF22CB60008F65B /* WDGridLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDGridLayoutView.h; sourceTree = "<group>"; };
+		662915821FF22CB60008F65B /* WDGridLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDGridLayoutView.m; sourceTree = "<group>"; };
+		662915841FF236AF0008F65B /* WDTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDTableViewCell.h; sourceTree = "<group>"; };
+		662915851FF236AF0008F65B /* WDTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDTableViewCell.m; sourceTree = "<group>"; };
+		749FF7CA21004F091749AA12 /* Pods-ios-shanGeView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-shanGeView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-shanGeView/Pods-ios-shanGeView.release.xcconfig"; sourceTree = "<group>"; };
+		A5A5FD28A3DC72AF9EE20ED6 /* Pods-ios-shanGeView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-shanGeView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-shanGeView/Pods-ios-shanGeView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		662915031FF1F9C70008F65B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD7C0295D08ADD685680DF3D /* Pods_ios_shanGeView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		662914FD1FF1F9C70008F65B = {
+			isa = PBXGroup;
+			children = (
+				662915081FF1F9C70008F65B /* ios-shanGeView */,
+				662915071FF1F9C70008F65B /* Products */,
+				7C9F48A22684068C2951FE8A /* Pods */,
+				E63100ADD817157CAADB485B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		662915071FF1F9C70008F65B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				662915061FF1F9C70008F65B /* ios-shanGeView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		662915081FF1F9C70008F65B /* ios-shanGeView */ = {
+			isa = PBXGroup;
+			children = (
+				662915681FF21F7C0008F65B /* Classes */,
+				662915671FF21F750008F65B /* Supporting */,
+			);
+			path = "ios-shanGeView";
+			sourceTree = "<group>";
+		};
+		662915671FF21F750008F65B /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				662915691FF21F970008F65B /* Sources */,
+				6629150F1FF1F9C70008F65B /* Main.storyboard */,
+				662915151FF1F9C70008F65B /* Assets.xcassets */,
+				662915171FF1F9C70008F65B /* LaunchScreen.storyboard */,
+				6629151A1FF1F9C70008F65B /* Info.plist */,
+				662915121FF1F9C70008F65B /* ios_shanGeView.xcdatamodeld */,
+				662915651FF21A0D0008F65B /* data.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		662915681FF21F7C0008F65B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				662915751FF21FDF0008F65B /* Controller */,
+				662915761FF21FDF0008F65B /* Model */,
+				662915741FF21FDF0008F65B /* View */,
+				662915721FF21FDF0008F65B /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		662915691FF21F970008F65B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6629156D1FF21FA30008F65B /* 0.txt */,
+				6629156A1FF21FA20008F65B /* 1.txt */,
+				6629156B1FF21FA30008F65B /* 2.txt */,
+				6629156C1FF21FA30008F65B /* 3.txt */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		662915721FF21FDF0008F65B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				662915731FF21FDF0008F65B /* Category */,
+				662915091FF1F9C70008F65B /* AppDelegate.h */,
+				6629150A1FF1F9C70008F65B /* AppDelegate.m */,
+				6629151B1FF1F9C70008F65B /* main.m */,
+				6629157A1FF2203C0008F65B /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		662915731FF21FDF0008F65B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				662915771FF2201C0008F65B /* UIView+WDExtension.h */,
+				662915781FF2201C0008F65B /* UIView+WDExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		662915741FF21FDF0008F65B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				662915811FF22CB60008F65B /* WDGridLayoutView.h */,
+				662915821FF22CB60008F65B /* WDGridLayoutView.m */,
+				662915841FF236AF0008F65B /* WDTableViewCell.h */,
+				662915851FF236AF0008F65B /* WDTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		662915751FF21FDF0008F65B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6629150C1FF1F9C70008F65B /* ViewController.h */,
+				6629150D1FF1F9C70008F65B /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		662915761FF21FDF0008F65B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6629157B1FF222760008F65B /* WDItem.h */,
+				6629157C1FF222760008F65B /* WDItem.m */,
+				6629157E1FF224260008F65B /* WDBaseModel.h */,
+				6629157F1FF224260008F65B /* WDBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7C9F48A22684068C2951FE8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5A5FD28A3DC72AF9EE20ED6 /* Pods-ios-shanGeView.debug.xcconfig */,
+				749FF7CA21004F091749AA12 /* Pods-ios-shanGeView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E63100ADD817157CAADB485B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FEB4A83C200EC4A38C83F6F /* Pods_ios_shanGeView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		662915051FF1F9C70008F65B /* ios-shanGeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6629151F1FF1F9C70008F65B /* Build configuration list for PBXNativeTarget "ios-shanGeView" */;
+			buildPhases = (
+				C76C8E17B2C8745F6521424B /* [CP] Check Pods Manifest.lock */,
+				662915021FF1F9C70008F65B /* Sources */,
+				662915031FF1F9C70008F65B /* Frameworks */,
+				662915041FF1F9C70008F65B /* Resources */,
+				68FC36968D45981AF9BA23F8 /* [CP] Embed Pods Frameworks */,
+				BB919DCB78B6466ACFC37DF2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-shanGeView";
+			productName = "ios-shanGeView";
+			productReference = 662915061FF1F9C70008F65B /* ios-shanGeView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		662914FE1FF1F9C70008F65B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WD;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					662915051FF1F9C70008F65B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 662915011FF1F9C70008F65B /* Build configuration list for PBXProject "ios-shanGeView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 662914FD1FF1F9C70008F65B;
+			productRefGroup = 662915071FF1F9C70008F65B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				662915051FF1F9C70008F65B /* ios-shanGeView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		662915041FF1F9C70008F65B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662915191FF1F9C70008F65B /* LaunchScreen.storyboard in Resources */,
+				662915701FF21FA30008F65B /* 3.txt in Resources */,
+				6629156E1FF21FA30008F65B /* 1.txt in Resources */,
+				662915711FF21FA30008F65B /* 0.txt in Resources */,
+				662915161FF1F9C70008F65B /* Assets.xcassets in Resources */,
+				6629156F1FF21FA30008F65B /* 2.txt in Resources */,
+				662915661FF21A0D0008F65B /* data.plist in Resources */,
+				662915111FF1F9C70008F65B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68FC36968D45981AF9BA23F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-shanGeView/Pods-ios-shanGeView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVPullToRefresh/SVPullToRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVPullToRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-shanGeView/Pods-ios-shanGeView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB919DCB78B6466ACFC37DF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-shanGeView/Pods-ios-shanGeView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76C8E17B2C8745F6521424B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-shanGeView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		662915021FF1F9C70008F65B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6629150E1FF1F9C70008F65B /* ViewController.m in Sources */,
+				662915861FF236AF0008F65B /* WDTableViewCell.m in Sources */,
+				6629150B1FF1F9C70008F65B /* AppDelegate.m in Sources */,
+				6629151C1FF1F9C70008F65B /* main.m in Sources */,
+				6629157D1FF222760008F65B /* WDItem.m in Sources */,
+				662915801FF224260008F65B /* WDBaseModel.m in Sources */,
+				662915141FF1F9C70008F65B /* ios_shanGeView.xcdatamodeld in Sources */,
+				662915791FF2201C0008F65B /* UIView+WDExtension.m in Sources */,
+				662915831FF22CB60008F65B /* WDGridLayoutView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6629150F1FF1F9C70008F65B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				662915101FF1F9C70008F65B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		662915171FF1F9C70008F65B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				662915181FF1F9C70008F65B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6629151D1FF1F9C70008F65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6629151E1FF1F9C70008F65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		662915201FF1F9C70008F65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A5FD28A3DC72AF9EE20ED6 /* Pods-ios-shanGeView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AWTS62H8S;
+				GCC_PREFIX_HEADER = "ios-shanGeView/Classes/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "ios-shanGeView/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ios-shanGeView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		662915211FF1F9C70008F65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749FF7CA21004F091749AA12 /* Pods-ios-shanGeView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AWTS62H8S;
+				GCC_PREFIX_HEADER = "ios-shanGeView/Classes/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = "ios-shanGeView/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.ios-shanGeView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		662915011FF1F9C70008F65B /* Build configuration list for PBXProject "ios-shanGeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6629151D1FF1F9C70008F65B /* Debug */,
+				6629151E1FF1F9C70008F65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6629151F1FF1F9C70008F65B /* Build configuration list for PBXNativeTarget "ios-shanGeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662915201FF1F9C70008F65B /* Debug */,
+				662915211FF1F9C70008F65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		662915121FF1F9C70008F65B /* ios_shanGeView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				662915131FF1F9C70008F65B /* ios_shanGeView.xcdatamodel */,
+			);
+			currentVersion = 662915131FF1F9C70008F65B /* ios_shanGeView.xcdatamodel */;
+			path = ios_shanGeView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 662914FE1FF1F9C70008F65B /* Project object */;
+}
