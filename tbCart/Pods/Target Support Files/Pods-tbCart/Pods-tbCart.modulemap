@@ -1,0 +1,6 @@
+framework module Pods_tbCart {
+  umbrella header "Pods-tbCart-umbrella.h"
+
+  export *
+  module * { export * }
+}
